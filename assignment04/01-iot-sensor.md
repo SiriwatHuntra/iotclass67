@@ -1,9 +1,15 @@
 # Ingest and store real-time data from IoT sensors.
->> ใช้ software อะไรบ้าง เช่น Eclip MQTT , Microsoft spring boot
+- Eclip MQTT
 
 ## MQTT Topic and Payload
->> ใช้ topic ชื่ออะไร payload มีหน้าตาอย่างไร
-
+Topic: iot-frames
+Payload:
+  JsonObject payload = jsonDoc.createNestedObject("payload");
+  payload["temperature"] = temp;
+  payload["humidity"] = humid;
+  payload["pressure"] = pressure;
+  payload["luminosity"] = analogval;
+  
 ## ESP32
 >> เอา code ที่ใช้มาวาง พร้อมทั้งวาดรูป flow chart
 
