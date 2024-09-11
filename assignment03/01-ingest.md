@@ -1,4 +1,3 @@
-# MQTT
 # Ingest and store real-time data from IoT sensors
 
 
@@ -12,12 +11,12 @@ IoT sensors ส่งข้อมูลด้วย MQTT protocol.
 
 ## iot-sensor-1
 
-IoT Sensor 1 เป็น IoT ที่ได้มาจากการ compose up docker ใน Server ตัวมันเอง
+- IoT Sensor 1 เป็น IoT ที่ได้มาจากการ compose up docker ใน Server ตัวมันเอง
 
 ## iot-sensor-2
 
-IoT Sensor 2 เป็น IoT ที่ได้มาจากการ compose up docker ใน PC ตัวนอกที่ได้ทำการส่งข้อมูลไปยัง Server
+- IoT Sensor 2 เป็น IoT ที่ได้มาจากการ compose up docker ใน PC ตัวนอกที่ได้ทำการส่งข้อมูลไปยัง Server
 
 ## iot-sensor-3-10
 
-IoT Sensor 3 เป็น IoT ที่ได้ข้อมูลมาจากการที่ IoT เราเอง 1 ตัว และ ตัวอื่นหรือกลุ่มอื่น ๆ ส่งมาให้เราอีก
+- IoT Sensor 3 เป็น IoT ที่ได้ข้อมูลมาจากการที่ IoT เราเอง 1 ตัว และ ตัวอื่นหรือกลุ่มอื่น ๆ ส่งมาให้เราอีก
