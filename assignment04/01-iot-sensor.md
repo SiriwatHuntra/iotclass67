@@ -11,7 +11,6 @@ Payload:
   payload["luminosity"] = analogval;
   
 ## ESP32
->> เอา code ที่ใช้มาวาง พร้อมทั้งวาดรูป flow chart
 
 ```cpp
 /// LIB import
@@ -300,3 +299,5 @@ void loop(){
   Serial.println("");
 }
 ```
+
+![alt text](//resources/FlowIoT.png)
