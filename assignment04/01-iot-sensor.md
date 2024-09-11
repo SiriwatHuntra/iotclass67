@@ -299,7 +299,6 @@ void loop(){
   Serial.println("");
 }
 
+![image description](/resources/FlowIoT.drawio.png)
 
-![FlowIoT](https://github.com/user-attachments/assets/b02bd15b-a88d-464c-b127-508a5f198073)
-![FlowIoT](https://github.com/user-attachments/assets/b02bd15b-a88d-464c-b127-508a5f198073)
 
