@@ -300,4 +300,4 @@ void loop(){
 }
 ```
 
-![Alt text](//resources/FlowIoT.drawio.png?raw=true "Title")
+![image description](/resources/FlowIoT.drawio.png)
