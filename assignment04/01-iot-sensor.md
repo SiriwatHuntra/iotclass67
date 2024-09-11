@@ -14,7 +14,7 @@ Payload:
 >> เอา code ที่ใช้มาวาง พร้อมทั้งวาดรูป flow chart
 
 ```cpp
-/// LIB
+/// LIB import
 #include <Wire.h>
 #include <Adafruit_BMP280.h>
 #include <Adafruit_MPU6050.h>
@@ -28,59 +28,17 @@ Payload:
 #include <SPI.h>
 
 /// Set up WiFi config
-//const char* ssid = "TP-Link_7F5E2"; //Chai.net
-//const char* password = "P@ssw0rd";
-const char* ssid = "TP-Link_7CC6"; //Pon.net
-const char* password = "08378774";
-//const char* ssid = "TP-Link_CA1E"; //JAE.net
-//const char* password = "34397121"; 
-//const char* ssid = "TP-Link_CA30";
-//const char* password = "29451760";
-//
+const char* ssid = "TP-Link";
+const char* password = "1234";
 
 const int mqtt_port = 1883;
 /// Own user pass 
-const char* mqtt_server = "172.16.47.1";
-const char* mqtt_user = "iot-frames-3";
+const char* mqtt_server = "IP";
+const char* mqtt_user = "iot-frames-x";
 const char* mqtt_password = "1234";
 
-// Pon User_pass 
-//const char* mqtt_server = "172.16.46.11";
-//const char* mqtt_user = "liam-sensor-6";
-//const char* mqtt_password = "1q2w3e4r";
-
-// Kong User_pass 
-//const char* mqtt_server = "172.16.46.41";
-//const char* mqtt_user = "iot-frames-4";
-//const char* mqtt_password = "kong4";
-
-// big User_pass 
-//const char* mqtt_server = "172.16.46.101";
-//const char* mqtt_user = "iot-b_b-frames-7";
-//const char* mqtt_password = "1234";
-
-// north User_pass 
-//const char* mqtt_server = "172.16.46.55";
-//const char* mqtt_user = "kinano05";
-//const char* mqtt_password = "1234";
-
-// jae User_pass 
-//const char* mqtt_server = "172.16.46.37";
-//const char* mqtt_user = "iot-frames-4";
-//const char* mqtt_password = "nX7M";
-
-// five User_pass 
-//const char* mqtt_server = "172.16.46.111";
-//const char* mqtt_user = "aimpree7";
-//const char* mqtt_password = "aimpree";
-
-// game User_pass 
-//const char* mqtt_server = "172.16.46.55";
-//const char* mqtt_user = "iot-sensor-4";
-//const char* mqtt_password = "12345";
-
 /// Net
-const PROGMEM char* ntpServer = "172.16.47.1";
+const PROGMEM char* ntpServer = "Sever IP";
 
 /// Sensor Config
 // BMP280
@@ -140,9 +98,9 @@ static int16_t error;
 WiFiClient espClient;
 PubSubClient client(espClient);
 WiFiServer server(1883);
-IPAddress local_IP(172, 16, 47, 27);   // Static IP address
-IPAddress gateway(172, 16, 46, 254);      // IP address of your router
-IPAddress subnet(255, 255, 255, 192);
+IPAddress local_IP(IP);   // Static IP address
+IPAddress gateway(Gateway IP);      // IP address of your router
+IPAddress subnet(Subnet mask);
 
 void LED_Setup(){
   strip.begin();
@@ -181,7 +139,7 @@ void mqtt_handle() {
   while (!client.connected()) {
     Serial.print("Connecting with MQTT...");
 
-    if (client.connect("Form_Chai", mqtt_user, mqtt_password)) {
+    if (client.connect("Message", mqtt_user, mqtt_password)) {
       Serial.println("Already connected");
       GREENLED();
       client.subscribe("esp32/sensorData");
@@ -317,9 +275,9 @@ void loop(){
   Serial.println(analogval);
   /// json output
   StaticJsonDocument<512> jsonDoc;
-  jsonDoc["id"] = "65476587"; //43245253
-  jsonDoc["name"] = "iot-sensor-2";
-  jsonDoc["place_id"] = "32347983"; //42343243
+  jsonDoc["id"] = ""; //43245253
+  jsonDoc["name"] = "iot-sensor-name";
+  jsonDoc["place_id"] = ""; //42343243
   jsonDoc["date"] = NTP.getTimeDateString(time(NULL), "%Y-%m-%dT%H:%M:%S"); // ISO 8601 format
   jsonDoc["timestamp"] = epochTime;
 
