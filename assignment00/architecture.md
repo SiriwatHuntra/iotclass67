@@ -2,11 +2,15 @@
 
 ## Architecture Overview
 
-![IoT Event Streaming Architecture ![F351E2C8-6E5A-4243-A734-352C90589307](https://github.com/user-attachments/assets/206acbde-8d36-4a34-a7a3-3fcbeb8fccd4)
+![IoT Event Streaming Architecture ![Untitled_page-0002](https://github.com/user-attachments/assets/12dbb944-cad2-4ed1-81fa-9fba0a8715c4)
+
+
 
 
 ## Eclipse Mosquitto
 
+    Open Source สำหรับการจัดการ Message (Message Broker) ที่ใช้งาน MQTT Protocol สามารถใช้งานได้บนคอมพิวเตอร์ขนาดเล็กจนถึงเครื่อง Server
+ 	MQTT Protocol เป็น Protocol สำหรับการใช้ส่ง Message ระหว่างอุปกรณ์แบบ Asynchronous (Pub/Sub Model) เหมาะสำหรับการใช้งานบนระบบ IoT ที่ประกอบด้วย Low Power Sensor และ Mobile Device ในระบบ
 
 
 ## Apache ZooKeeper
