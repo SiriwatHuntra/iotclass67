@@ -24,5 +24,4 @@ start service ในหน้าจอ service_2 มี iot-processor
 ## start-service #3
 
 start service ในหน้าจอ service_3 มี iot_sensor_1
-โดยเราต้องรอให้ทั้ง 1 ตัวนี้ Run ให้เรียบร้อยก่อนที่จะไป Step ต่อไป
 โดยให้ Run ได้เลย
