@@ -3,14 +3,14 @@ Internet of things Class 2567
 
 # Table of Contents
 
-- [ ] Main technologies of architectures [assignment00](/assignment00)
+- [ ] Main technologies of architectures [assignment00](/assignment00/architecture.md)
 - [ ] Setting up servers and components. [assignment01](/assignment01)
-- [ ] Compose services. [assignment02](/assignment02)
-- [ ] Ingest and store real-time data from IoT sensors. [assignment03](/assignment03), [assignment04](/assignment04)
-- [ ] Analyze and make aggregations. [assignment05](/assignment05)
-- [ ] Store data. [assignment06](/assignment06)
-- [ ] Data Visualization.  [assignment07](/assignment07)
-- [ ] Used technologies. [assignment08](/assignment08)
+- [ ] Compose services. 
+- [ ] Ingest and store real-time data from IoT sensors. [assignment03](/assignment03/01-ingest.md), [assignment04](/assignment04/01-iot-sensor.md)
+- [ ] Analyze and make aggregations. [assignment05](/assignment05/01-analyze.md)
+- [ ] Store data. [assignment06](/assignment06/01-storedata.md)
+- [ ] Data Visualization.  [assignment07](/assignment07/01-visualization.md)
+- [ ] Used technologies. [assignment08](/assignment08/01-used-technology.md)
 
 
 Iot Event Streaming Architecture.[^1]
